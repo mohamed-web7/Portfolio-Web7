@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta name="description" content="Mr Mohamed is a web developer متخصص في إنشاء مواقع عصرية وسريعة باستخدام HTML, CSS و JavaScript. أقدم خدمات تصميم وتطوير مواقع احترافية تلبي احتياجاتك.">
+    <meta name="author" content="Mr Mohamed">
+    <meta name="keywords" content="Web 7 , web devlopment , web Devloper , landing page , website , Mr Mohamed, web developer, مطور مواقع, تصميم مواقع, تطوير مواقع, HTML, CSS, JavaScript, frontend developer, landing page, responsive design, web development services">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enStyle.css" id="ENStyle" disabled>
+    <title>Web 7</title>
+</head>
+<body>
+    <!-- -------------------------------------------------------------------------- 
+                            Start Header
+         ---------------------------------------------------------------------------->
+    <header>
+        <div class="my-container flex items-center justify-between py-5">
+            <div class="right_nav flex items-center gap-[40px]">
+                <div class="logo ">
+                    <a href="index.html" class="flex items-center gap-[10px] logoContain">
+                        <span data-tr="web7_logo_text">WEB 7</span>
+                        <img src="images/logo.png" alt="logo" class="w-[40px]">
+                    </a>
+                </div>
+                <nav class="flex items-center gap-[35px]" id="navHeaderPhone">
+                    <a href="#HeroSection" class="active" data-tr="nav_home" onclick="changeBorder(this)">الرئيسية</a>
+                    <a href="#ServicesSection" data-tr="nav_services" onclick="changeBorder(this)">الخدمات</a>
+                    <a href="#PortfolioSection" data-tr="nav_portfolio" onclick="changeBorder(this)">أعمالي</a>
+                    <a href="#ProcessSction" data-tr="nav_process" onclick="changeBorder(this)">طريقة العمل</a>
+                    <a href="#packagesSection" data-tr="nav_pricing" onclick="changeBorder(this)">الباقات</a>
+                    <a href="#ContactSection" data-tr="nav_contact" onclick="changeBorder(this)">اتصل بي</a>
+                </nav>
+            </div>
+            <div class="left_nav flex items-center gap-[25px]">
+                <div class="language">
+                    <button class="active btnLang" data-tr="lang_arabic" onclick="translatePage('ar',this)">عربي</button>
+                    <button data-tr="lang_english" onclick="translatePage('en',this)" class="btnLang">EN</button>
+                    <button data-tr="lang_french" onclick="translatePage('fr',this)" class="btnLang">FR</button>
+                </div>
+                <div class="icon" onclick="showLink(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#e3e3e3"><path d="M120-680v-80h720v80H120Zm0 480v-80h720v80H120Zm0-240v-80h720v80H120Z"/></svg>
+                </div>
+            </div>
+        </div>
+    </header>   
+    <!-- -------------------------------------------------------------------------- 
+                            Start Hero Section
+         ---------------------------------------------------------------------------->  
+    <div class="hero_content" id="HeroSection">
+        <div class="my-container flex items-start">
+            <!-- -----------------------------  01 -------------------------------- -->
+            <div class="content">
+                <div class="sert" data-tr="hero_badge">مطور ويب معتمد</div>
+                <h1 data-tr="hero_title" id="HeroContentGradient">أحول أفكارك الى <span>مواقع وصفحات</span> احترافية</h1>
+                <p class="subtitle" data-tr="hero_subtitle">أبني مواقع و صفحات ويب تساهم في نمو أعمالك و زيادة أرباحك, بتصاميم عصرية و تجربة مستخدم سلسة</p>
+                <div class="states">
+                    <div class="item_state">
+                        <h1 data-tr="stat_completed_projects_count">20+</h1>
+                        <p data-tr="stat_completed_projects">مشروع مكتمل</p>
+                    </div>
+                    <div class="item_state">
+                        <h1 data-tr="stat_happy_clients_count">15+</h1>
+                        <p data-tr="stat_happy_clients">عميل سعيد</p>
+                    </div>
+                    <div class="item_state">
+                        <h1 data-tr="stat_improvements_count">10+</h1>
+                        <p data-tr="stat_improvements">تعديل و تحسين</p>
+                    </div>
+                </div>
+                <div class="buttonsCta">
+                    <a href="#ContactSection" data-tr="cta_start_project">ابدأ مشروعك الان</a>
+                    <a href="#PortfolioSection" data-tr="cta_view_work">شاهد أعمالي</a>
+                </div>
+            </div>
+            <!-- -----------------------------  02  -------------------------------- -->
+            <div class="image">
+                <img src="images/hero_man.png" alt="man">
+            </div>
+        </div>
+    </div>     
+    <!-- -------------------------------------------------------------------------- 
+                            Start Trust Section
+         ---------------------------------------------------------------------------->  
+    <div class="trust">
+        
+            <div class="badges">
+
+                <div class="item">
+                  <div class="iconee">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px" fill="#fff">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9E1A1C"/>
+                            <stop offset="100%" stop-color="#D4AF37"/>
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#grad1)" d="M480-480Zm0 400q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 10-.5 20t-1.5 20q-9-2-18.5-3t-19.5-1q-11 0-21 1t-21 3q1-10 1.5-19.5t.5-20.5v-189l-240-90-240 90v189q0 121 68 220t172 132q21-7 41-17t39-23v94q-19 10-39 17.5T480-80Zm194 0q-14 0-24-10t-10-24v-132q0-14 10-24t24-10h6v-40q0-33 23.5-56.5T760-400q33 0 56.5 23.5T840-320v40h6q14 0 24 10t10 24v132q0 14-10 24t-24 10H674Zm46-200h80v-40q0-17-11.5-28.5T760-360q-17 0-28.5 11.5T720-320v40Z"/>
+                    </svg>
+                  </div>  
+                  <div class="text">
+                    <h4 data-tr="trust_custom_design_title">تصميم مخصص</h4>
+                    <p data-tr="trust_custom_design_desc">100% لك</p>
+                  </div>
+                </div>
+                <!-- --------- -->
+                <div class="item">
+                  <div class="iconee">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="45px" height="45px">
+  
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9E1A1C"/>
+                            <stop offset="100%" stop-color="#D4AF37"/>
+                            </linearGradient>
+                        </defs>
+
+                        <path fill="url(#grad1)" d="M480-40v-80h280v-40H600v-320h160v-40q0-116-82-198t-198-82q-116 0-198 82t-82 198v40h160v320H200q-33 0-56.5-23.5T120-240v-280q0-74 28.5-139.5T226-774q49-49 114.5-77.5T480-880q74 0 139.5 28.5T734-774q49 49 77.5 114.5T840-520v400q0 33-23.5 56.5T760-40H480Z"/>
+  
+                    </svg>
+                  </div>  
+                  <div class="text">
+                    <h4 data-tr="trust_support_title">دعم فني 24/7</h4>
+                    <p data-tr="trust_support_desc">طوال أيام الأسبوع</p>
+                  </div>
+                </div>
+                <!-- --------- -->
+                <div class="item">
+                  <div class="iconee">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px">
+  
+                        <defs>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9E1A1C"/>
+                            <stop offset="100%" stop-color="#D4AF37"/>
+                            </linearGradient>
+                        </defs>
+
+                        <path fill="url(#grad2)" d="M600-160q-134 0-227-93t-93-227q0-133 93-226.5T600-800q133 0 226.5 93.5T920-480q0 134-93.5 227T600-160Zm0-80q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70Zm91-91 57-57-108-108v-144h-80v177l131 132ZM80-600v-80h160v80H80ZM40-440v-80h200v80H40Zm40 160v-80h160v80H80Zm520-200Z"/>
+  
+                    </svg>
+                  </div>  
+                  <div class="text">
+                    <h4 data-tr="trust_fast_delivery_title">تسليم سريع</h4>
+                    <p data-tr="trust_fast_delivery_desc">خلال 7-14 يوم</p>
+                  </div>
+                </div>
+                <!-- --------- -->
+                <div class="item">
+                  <div class="iconee">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px">
+  
+                        <defs>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9E1A1C"/>
+                            <stop offset="100%" stop-color="#D4AF37"/>
+                            </linearGradient>
+                        </defs>
+
+                        <path fill="url(#grad3)" d="M240-280 40-480l200-200 56 56-143 144 143 144-56 56Zm178 132-76-24 200-640 76 24-200 640Zm302-132-56-56 143-144-143-144 56-56 200 200-200 200Z"/>
+  
+                    </svg>
+                  </div>  
+                  <div class="text">
+                    <h4 data-tr="trust_clean_code_title">كود نظيف وآمن</h4>
+                    <p data-tr="trust_clean_code_desc">بأحدث التقنيات</p>
+                  </div>
+                </div>
+            </div>
+        
+    </div>     
+    <!-- -------------------------------------------------------------------------- 
+                            Start Services Section
+         ----------------------------------------------------------------------------> 
+    <div class="services" id="ServicesSection">
+        <div class="my-container">
+            <div class="titlle">
+                <span data-tr="services_section_title">الخدمات</span>
+                <h1 data-tr="services_section_heading">ماذا أقدم لك؟</h1>
+                <p data-tr="services_section_subtitle">حلول متكاملة تناسب احتياجاتك وتساعدك في تحقيق أهدافك الرقمية</p>
+            </div>
+            <div class="services_grid">
+                <div class="card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3 data-tr="service_company_websites_title">مواقع شركات</h3>
+                    <p data-tr="service_company_websites_desc">مواقع احترافية تعكس هوية شركتك وتقدم خدماتك بشكل مميز</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_custom_design">تصميم مخصص</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_responsive">متجاوب مع كل الأجهزة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_seo">تحسين محركات البحث</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3 data-tr="service_landing_pages_title">صفحات هبوط</h3>
+                    <p data-tr="service_landing_pages_desc">صفحات تسويقية احترافية تزيد من معدلات التحويل</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_attractive_design">تصميم جذاب</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_high_speed">سرعة عالية</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_responsive_all">متجاوبة مع كل الأجهزة</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="service-icon"><i class="fas fa-cart-shopping"></i></div>
+                    <h3 data-tr="service_product_landing_pages_title">صفحات هبوط للمنتجات</h3>
+                    <p data-tr="service_product_landing_pages_desc">صفحات هبوط مخصصة لمنتجاتك مصممة لزيادة المبيعات وتحويل الزوار إلى عملاء، مع تركيز كامل على الإقناع وسهولة الشراء.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_sales_oriented">تصميم موجه للبيع</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_high_load_speed">سرعة تحميل عالية لخفض نسبة الخروج</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_sales_optimized">مهيأة لزيادة المبيعات وتحقيق نتائج حقيقية</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3 data-tr="service_brand_websites_title">مواقع احترافية للبراندات والخدمات</h3>
+                    <p data-tr="service_brand_websites_desc">مواقع احترافية تعكس قوة علامتك التجارية وتناسب المطاعم، الفنادق، العيادات والشركات، مع تجربة مستخدم مميزة تبني الثقة وتجذب العملاء.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_brand_identity">تصميم يعكس هوية البراند</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_interactive_services">حجز وخدمات تفاعلية (مطاعم / عيادات / فنادق)</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_search_visibility">تحسين الظهور في محركات البحث</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="service-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3 data-tr="service_figma_conversion_title">تحويل تصميم Figma إلى موقع حقيقي</h3>
+                    <p data-tr="service_figma_conversion_desc">أقوم بتحويل تصميمك من Figma إلى موقع ويب احترافي سريع ومتجاوب يعمل على جميع الأجهزة مع كود نظيف ومنظم.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_accurate_conversion">تحويل دقيق للتصميم كما هو في Figma</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_clean_code">كود نظيف وسهل التعديل مستقبلاً</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_responsive_mobile_desktop">موقع متجاوب مع الجوال والكمبيوتر</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h3 data-tr="service_seo_title">تحسين محركات البحث</h3>
+                    <p data-tr="service_seo_desc">ظهور متقدم في نتائج البحث لزيادة الزوار</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_keyword_analysis">تحليل الكلمات</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_speed_optimization">تحسين السرعة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="service_feature_clean_urls">روابط نظيفة</span></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>  
+    <!-- -------------------------------------------------------------------------- 
+                            Start Portfolio Section
+         ---------------------------------------------------------------------------->
+    <div class="portfolio" id="PortfolioSection">
+        <div class="my-container">
+            <div class="titlle">
+                <span data-tr="portfolio_section_title">أعمالي</span>
+                <h1 data-tr="portfolio_section_heading">نماذج مشاريع سابقة</h1>
+                <p data-tr="portfolio_section_subtitle">مجموعة من المشاريع التي قمت بتنفيذها لعملاء في مجالات متنوعة</p>
+            </div>
+            <div class="cardes">
+                <div class="card" onclick="openProject('realEstate')">
+                    <img src="images/realEstate.jpg" alt="Real Estate Website">
+                    <div class="overlay">
+                        <h3 data-tr="portfolio_real_estate_title">موقع لشركة عقارية</h3>
+                        <div class="tools">
+                            <span>HTML5</span>
+                            <span>Tailwind Css</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card " onclick="openProject('dentist')">
+                    <img src="images/dentist.jpg" alt="Real Estate Website">
+                    <div class="overlay">
+                        <h3 data-tr="portfolio_dentist_title">صفحة هبوط لعيادة أسنان</h3>
+                        <div class="tools">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="openProject('hotel')">
+                    <img src="images/hotel.jpg" alt="Real Estate Website">
+                    <div class="overlay">
+                        <h3 data-tr="portfolio_hotel_title">موقع لفندق</h3>
+                        <div class="tools">
+                            <span>Figma</span>
+                            <span>HTML5 & Css</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project_01" id="realEstateProject">
+                <div class="carde">
+                    <div class="headd">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="logo">
+                            <h1>WEB 7</h1>
+                        </div>
+                        <div class="icone" onclick="closing('realEstate')">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        </div>
+                    </div>
+                    <div class="viewer">
+                        <h1 data-tr="trestt">بيع عقارك بسرعة وباحترافية مع موقع يظهره بأفضل صورة</h1>
+                        <p data-tr="trrestp">موقع مصمم خصيصًا لأصحاب العقارات لعرض العقارات بشكل جذاب، توضيح الأسعار والمواصفات بدقة، لجذب العملاء وزيادة فرص البيع.</p>
+                        <img src="images/Real Estate Projet.jpg" alt="Website">
+                    </div>
+                </div>
+            </div>
+            <div class="project_01" id="dentistProject">
+                <div class="carde">
+                    <div class="headd">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="logo">
+                            <h1>WEB 7</h1>
+                        </div>
+                        <div class="icone" onclick="closing('dentist')">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        </div>
+                    </div>
+                    <div class="viewer">
+                        <h1 data-tr="trdtt">اجذب المزيد من مرضى الأسنان مع صفحة حجز سهلة واحترافية</h1>
+                        <p data-tr="trdd">صفحة هبوط مصممة خصيصًا لعيادتك، تعرض خدماتك بشكل احترافي وتتيح للمرضى حجز مواعيدهم بسهولة، مما يزيد الطلبات ويجعل إدارتك أسهل.</p>
+                        <img src="images/dentistProject.jpg" alt="Website">
+                    </div>
+                </div>
+            </div>
+            <div class="project_01" id="hotelProject">
+                <div class="carde">
+                    <div class="headd">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="logo">
+                            <h1>WEB 7</h1>
+                        </div>
+                        <div class="icone" onclick="closing('hotel')">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        </div>
+                    </div>
+                    <div class="viewer">
+                        <h1 data-tr="trhtt">زد حجوزات فندقك مع موقع سريع واحترافي يجذب الضيوف</h1>
+                        <p data-tr="trhtd">موقع مصمم للفنادق يرفع حجوزاتك، سريع، متجاوب مع كل الأجهزة، ويعرض خدماتك بشكل احترافي مع نظام حجز يسهل على الضيوف الحجز فورًا.</p>
+                        <img src="images/HotelProject.jpg" alt="Website">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+    <!-- -------------------------------------------------------------------------- 
+                            Start Why Us Section
+         ---------------------------------------------------------------------------->    
+    <div class="why">
+        <div class="my-container">
+            <div class="titlle">
+                <span data-tr="why_us_section_title">لماذا WEB 7 ؟</span>
+                <h1 data-tr="why_us_section_heading">أسباب تدفعك لاختياري</h1>
+                <p data-tr="why_us_section_subtitle">خبرة وجودة واحترافية في كل مشروع</p>
+            </div>
+
+            <div class="boxes">
+                <div class="box">
+                    <div class="icone"><i class="fas fa-chart-line"></i></div>
+                    <h4 data-tr="why_real_results_title">نتائج حقيقية</h4>
+                    <p data-tr="why_real_results_desc">مواقع مصممة لزيادة العملاء والمبيعات</p>
+                </div>
+                <div class="box">
+                    <div class="icone"><i class="fas fa-bolt"></i></div>
+                    <h4 data-tr="why_performance_title">أداء وسرعة عالية</h4>
+                    <p data-tr="why_performance_desc">مواقع سريعة ومحسّنة لتجربة مستخدم مثالية</p>
+                </div>
+                <div class="box">
+                    <div class="icone"><i class="fas fa-clock"></i></div>
+                    <h4 data-tr="why_on_time_title">تسليم في الموعد</h4>
+                    <p data-tr="why_on_time_desc">التزام بالمواعيد دائما</p>
+                </div>
+                <div class="box">
+                    <div class="icone"><i class="fas fa-headset"></i></div>
+                    <h4 data-tr="why_free_support_title">دعم مجاني</h4>
+                    <p data-tr="why_free_support_desc">مدة أسبوع بعد التسليم</p>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <div class="track">
+                    <div class="card">
+                    <p data-tr="testimonial_1_text">عملت مع عدة مطورين لكن WEB 7 كان الأفضل بكل معنى الكلمة. فهم احتياجاتي بدقة ونفذ المشروع باحترافية عالية، والتزم بالمواعيد وكان متواصلاً معي طول فترة العمل.</p>
+                    <div class="profile">
+                        <div class="image">
+                            <img src="images/user.png" alt="client">
+                        </div>
+                        <div class="info">
+                            <h5 data-tr="testimonial_1_name">أحمد علي</h5>
+                            <p data-tr="testimonial_1_role">صفحة هبوط ناجحة لمنتج</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <p data-tr="testimonial_2_text">بصراحة ما كنت متوقع يفرق معي الموقع لهدرجة، كنت حاطه بس ليكون عندي حضور على الإنترنت وخلاص. لكن بعد ما اشتغل عليه محمد، بديت نلاحظ الناس تدخل أكثر وتسأل وحتى يجو للمطعم. فرق كبير مقارنة بكيف كان قبل، حسيت فعلاً أنه خدمتي وصلت للناس.</p>
+                    <div class="profile">
+                        <div class="image">
+                            <img src="images/user.png" alt="client">
+                        </div>
+                        <div class="info">
+                            <h5 data-tr="testimonial_2_name">عبد الرحمان</h5>
+                            <p data-tr="testimonial_2_role">موقع مطعم</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <p data-tr="testimonial_3_text">بصراحة ما كنت متوقع صفحة بسيطة تفرق معي بهذا الشكل، كنت نحسبها حاجة ثانوية فقط. لكن بعد ما اشتغلت مع WEB 7، بديت نلاحظ عدد أكبر من الناس يتواصلوا معي ويحجزوا، وحتى الاستفسارات زادت بشكل واضح. فرق كبير مقارنة بكيف كان الوضع قبل.</p>
+                    <div class="profile">
+                        <div class="image">
+                            <img src="images/user.png" alt="client">
+                        </div>
+                        <div class="info">
+                            <h5 data-tr="testimonial_3_name">خالد</h5>
+                            <p data-tr="testimonial_3_role">صفحة هبوط لعيادة أسنان</p>
+                        </div>
+                    </div>
+                    </div>
+
+                
+                    <div class="card">
+                    <p data-tr="testimonial_4_text">عملت مع عدة مطورين لكن WEB 7 كان الأفضل بكل معنى الكلمة. فهم احتياجاتي بدقة ونفذ المشروع باحترافية عالية، والتزم بالمواعيد وكان متواصلاً معي طول فترة العمل.</p>
+                    <div class="profile">
+                        <div class="image">
+                            <img src="images/user.png" alt="client">
+                        </div>
+                        <div class="info">
+                            <h5 data-tr="testimonial_4_name">أحمد علي</h5>
+                            <p data-tr="testimonial_4_role">صفحة هبوط ناجحة لمنتج</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <p data-tr="testimonial_5_text">بصراحة ما كنت متوقع يفرق معي الموقع لهدرجة، كنت حاطه بس ليكون عندي حضور على الإنترنت وخلاص. لكن بعد ما اشتغل عليه محمد، بديت نلاحظ الناس تدخل أكثر وتسأل وحتى يجو للمطعم. فرق كبير مقارنة بكيف كان قبل، حسيت فعلاً أنه خدمتي وصلت للناس.</p>
+                    <div class="profile">
+                        <div class="image">
+                            <img src="images/user.png" alt="client">
+                        </div>
+                        <div class="info">
+                            <h5 data-tr="testimonial_5_name">عبد الرحمان</h5>
+                            <p data-tr="testimonial_5_role">موقع مطعم</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <p data-tr="testimonial_6_text">بصراحة ما كنت متوقع صفحة بسيطة تفرق معي بهذا الشكل، كنت نحسبها حاجة ثانوية فقط. لكن بعد ما اشتغلت مع WEB 7، بديت نلاحظ عدد أكبر من الناس يتواصلوا معي ويحجزوا، وحتى الاستفسارات زادت بشكل واضح. فرق كبير مقارنة بكيف كان الوضع قبل.</p>
+                    <div class="profile">
+                        <div class="image">
+                            <img src="images/user.png" alt="client">
+                        </div>
+                        <div class="info">
+                            <h5 data-tr="testimonial_6_name">خالد</h5>
+                            <p data-tr="testimonial_6_role">صفحة هبوط لعيادة أسنان</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </div> 
+    <!-- -------------------------------------------------------------------------- 
+                            Start Process Section
+         ----------------------------------------------------------------------------> 
+    <div class="process" id="ProcessSction">
+        <div class="my-container">
+            <div class="titlle">
+                <span data-tr="process_section_title">طريقة العمل</span>
+                <h1 data-tr="process_section_heading">كيف أعمل معك؟</h1>
+                <p data-tr="process_section_subtitle">خطوات واضحة و منظمة لضمان أفضل نتيجة</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="number">01</div>
+                    <h4 data-tr="process_step1_title">استشارة مجانية</h4>
+                    <p data-tr="process_step1_desc">نتحدث عن فكرتك وأهدافك ومتطلبات المشروع</p>
+                </div>
+                <div class="step">
+                    <div class="number">02</div>
+                    <h4 data-tr="process_step2_title">تصميم وتخطيط</h4>
+                    <p data-tr="process_step2_desc">أقدم لك نموذج أولي للموقع للموافقة عليه</p>
+                </div>
+                <div class="step">
+                    <div class="number">03</div>
+                    <h4 data-tr="process_step3_title">تطوير و برمجة</h4>
+                    <p data-tr="process_step3_desc">بناء الموقع بأحدث التقنيات مع مراجعات دورية</p>
+                </div>
+                <div class="step">
+                    <div class="number">04</div>
+                    <h4 data-tr="process_step4_title">تسليم و دعم</h4>
+                    <p data-tr="process_step4_desc">نطلق الموقع مع ضمان دعم فني لمدة أسبوع</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- -------------------------------------------------------------------------- 
+                            Start Pricing Section
+         ---------------------------------------------------------------------------->   
+    <div class="pricing" id="packagesSection">
+        <div class="my-container">
+            <div class="titlle">
+                <span data-tr="pricing_section_title">الباقات و الأسعار</span>
+                <h1 data-tr="pricing_section_heading">اختر الباقة المناسبة</h1>
+                <p data-tr="pricing_section_subtitle">أسعار تنافسية مع ضمان الجودة والاحترافية</p>
+            </div>
+            <h1 class="type" data-tr="pricing_landing_pages_type">أسعار صفحات الهبوط</h1>
+            <div class="pricing_grid">
+                <div class="card">
+                    <div class="info">
+                        <h3 data-tr="pricing_basic_landing_title">الباقة الأساسية</h3>
+                        <div class="price">80 $</div>
+                    </div>
+                    <ul class="featurs">
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_landing_feature_1">صفحة واحدة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_landing_feature_2">4 أقسام</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_landing_feature_3">تصميم متجاوب</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_landing_feature_4">نموذج اتصال</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_landing_feature_5">أيقونات وسائل التواصل الاجتماعي</span></li>
+                    </ul>
+                    <button class="purchase" data-tr="pricing_order_button" onclick="selectPackage('صفحة هبوط','الباقة الأساسية')">أطلب الان</button>
+                </div>
+                <div class="card mainn">
+                    <div class="popular" data-tr="pricing_most_popular_badge">الأكثر طلبا</div>
+                    <div class="info">
+                        <h3 data-tr="pricing_professional_landing_title">الباقة الاحترافية</h3>
+                        <div class="price">160 $</div>
+                    </div>
+                    <ul class="featurs">
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_landing_feature_1">صفحة واحدة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_landing_feature_2">9 أقسام</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_landing_feature_3">تصميم مخصص</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_landing_feature_4">متجاوب مع كل الأجهزة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_landing_feature_5">نموذج اتصال Form</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_landing_feature_6">أيقونات وسائل التواصل الاجتماعي</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_landing_feature_7">تحسين محركات البحث</span></li>
+                    </ul>
+                    <button class="purchase" data-tr="pricing_order_button" onclick="selectPackage('صفحة هبوط','الباقة الاحترافية')">أطلب الان</button>
+                </div>
+                <div class="card">
+                    <div class="info">
+                        <h3 data-tr="pricing_premium_landing_title">الباقة المتكاملة</h3>
+                        <div class="price">280 $</div>
+                    </div>
+                    <ul class="featurs">
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_landing_feature_1">3 صفحات</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_landing_feature_2">تصميم احترافي و مخصص</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_landing_feature_3">متجاوب مع كل الأجهزة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_landing_feature_4">نموذج اتصال Form</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_landing_feature_5">أيقونات وسائل التواصل الاجتماعي</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_landing_feature_6">تحسين و تعديل قوي لمحركات البحث</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_landing_feature_7">دعم مجاني لمدة أسبوعين بعد التسليم</span></li>
+                    </ul>
+                    <button class="purchase" data-tr="pricing_order_button" onclick="selectPackage('صفحة هبوط','الباقة المتكاملة')">أطلب الان</button>
+                </div>
+            </div>
+            <br><br><br>
+            <h1 class="type" data-tr="pricing_full_websites_type">أسعار مواقع كاملة</h1>
+            <div class="pricing_grid">
+                <div class="card">
+                    <div class="info">
+                        <h3 data-tr="pricing_basic_full_title">الباقة الأساسية</h3>
+                        <div class="price">400 $</div>
+                    </div>
+                    <ul class="featurs">
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_full_feature_1">5 صفحات رئيسية</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_full_feature_2">تصميم سلس</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_full_feature_3">متوافق مع جميع الأجهزة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_full_feature_4">صفحة تواصل جاهزة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_basic_full_feature_5">أيقونات وسائل التواصل الاجتماعي مدمجة</span></li>
+                    </ul>
+                    <button class="purchase" data-tr="pricing_order_button" onclick="selectPackage('موقع كامل','الباقة الأساسية')">أطلب الان</button>
+                </div>
+                <div class="card mainn">
+                    <div class="popular" data-tr="pricing_most_popular_badge">الأكثر طلبا</div>
+                    <div class="info">
+                        <h3 data-tr="pricing_professional_full_title">الباقة الاحترافية</h3>
+                        <div class="price">750 $</div>
+                    </div>
+                    <ul class="featurs">
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_full_feature_1">8–10 صفحات كاملة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_full_feature_2">تصميم مخصص يعكس هوية العلامة التجارية</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_full_feature_3">متجاوب مع كل الأجهزة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_full_feature_4">نموذج اتصال متكامل</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_full_feature_5">تحسين أساسي لمحركات البحث</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_full_feature_6">أيقونات تواصل، معرض صور،فيديوهات</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_professional_full_feature_7">تجربة مستخدم محسنة</span></li>
+                    </ul>
+                    <button class="purchase" data-tr="pricing_order_button" onclick="selectPackage('موقع كامل','الباقة الاحترافية')">أطلب الان</button>
+                </div>
+                <div class="card">
+                    <div class="info">
+                        <h3 data-tr="pricing_premium_full_title">الباقة المتكاملة</h3>
+                        <div class="price">1200 $</div>
+                    </div>
+                    <ul class="featurs">
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_full_feature_1">12–15 صفحة أو أكثر حسب الطلب</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_full_feature_2">تصميم احترافي ومخصص بالكامل</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_full_feature_3">هوية بصرية كاملة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_full_feature_4">تجربة مستخدم ممتازة على جميع الأجهزة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_full_feature_5">نماذج متعددة، بوابات تواصل متعددة</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_full_feature_6">تحسين كامل لمحركات البحث + سرعة عالية للموقع</span></li>
+                        <li><i class="fas fa-check"></i><span data-tr="pricing_premium_full_feature_7">دعم مجاني لمدة أسبوعين بعد التسليم</span></li>
+                    </ul>
+                    <button class="purchase" data-tr="pricing_order_button" onclick="selectPackage('موقع كامل','الباقة المتكاملة')">أطلب الان</button>
+                </div>
+            </div>
+        </div>
+    </div>        
+    <!-- -------------------------------------------------------------------------- 
+                            Start Contact Section
+         ---------------------------------------------------------------------------->
+    <div class="contact" id="ContactSection">
+        <div class="my-container">
+            <div class="titlle">
+                <span data-tr="contact_section_title">اتصل بي</span>
+                <h1 data-tr="contact_section_heading">ابدأ مشروعك الان</h1>
+                <p data-tr="contact_section_subtitle">املأ النموذج وسأتواصل معك خلال 24 ساعة</p>
+            </div>
+            <div class="form_container">
+                <div class="content">
+                    <h3 data-tr="contact_form_title">لنصنع شيئاً رائعاً معاً</h3>
+                    <p data-tr="contact_form_subtitle">أخبرني عن مشروعك وسأقدم لك أفضل الحلول المناسبة</p>
+                    <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohamed-ibrahim-60b97a381/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=61580205818219" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mohamed_web7/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/213776819127" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="icone" id="iconeContact">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 106.69" width="270px" height="270px" fill="#999"><path d="M58.61,43.44c.73.38,1.46.72,2.18,1s1.68.68,2.48,1h0c5.09,2,9.27,3.62,10.67,11.4A55.81,55.81,0,0,1,74.33,64h7.09v42.66H61.1V64h3.53c0-1.75-.09-3.61-.27-5.05a5.68,5.68,0,0,0-.17-.84,4.09,4.09,0,0,0-.31-.75l-.08-.15c-.28-.53-.55-1-.76-1.1l0,0c-.38-.14-.87-.3-1.43-.47s-1.39-.4-2.15-.6l-2.52-.61-2.22-.5c-1.1,4.73-2.52,10.16-4.15,15.42-.7,2.28-1.45,4.53-2.22,6.68h3.45v30.65H31.45V76h6.48c1-3.35,2-6.75,3-10.17,1.5-5.37,2.88-10.79,4.11-16.1-.35-.38-.69-.79-1-1.21a12.92,12.92,0,0,1-1-1.66,9,9,0,0,1-.76-2.09,7.14,7.14,0,0,1-.1-2.32l1.63-12.68a4,4,0,0,0-1.75.41h0a5.48,5.48,0,0,0-1.41,1.13c-.46.49-.92,1.08-1.41,1.71l0,0c-.39.49-.79,1-1.29,1.6q-2.74,3.18-5.5,6.34a1.12,1.12,0,0,1-.76.38h0a1.08,1.08,0,0,1-.79-.27c-1.73-1.55-4-3.47-5.54-5.11a1.07,1.07,0,0,1-.31-.72v0a1.12,1.12,0,0,1,.29-.78c1.81-1.89,3.71-4.22,5.42-6.26,1-1.23,1.89-2.35,2.82-3.33a16.33,16.33,0,0,1,3-2.6,13.1,13.1,0,0,1,3.88-1.72h0a21.39,21.39,0,0,1,5.16-.66h.08c1.43-.07,3.11,0,4.5,0l1.74,0c7,0,10.52,3.44,13.23,6.12l0,0c.57.56,1.1,1.08,1.58,1.49a5.83,5.83,0,0,0,1.4.91h0c.25.08.86-.23,1.55-.57l0,0a15,15,0,0,1,1.62-.72c2.36-1.08,4.78-2.39,7.13-3.36A3.41,3.41,0,0,1,80,23.62a4.46,4.46,0,0,1,1.59.47,5.06,5.06,0,0,1,1.85,1.59l0,0a4.84,4.84,0,0,1,.6,1.15v0a5,5,0,0,1-.15,3.56,7.47,7.47,0,0,1-1.36,2.14,1.12,1.12,0,0,1-.2.18.86.86,0,0,1-.19.11C80,33.92,77.81,35,75.61,36A25.53,25.53,0,0,1,71,37.64a13.75,13.75,0,0,1-5.52,0l-.17,0a14.5,14.5,0,0,1-5.76-3.41l-.93,9.24ZM0,106.69V88.05H20.32v18.64Zm94.85,0V53.3H90.14a3,3,0,0,1-2.53-1.19c-1.32-2,.49-4,1.75-5.34C92.9,42.86,101,32.16,102.73,30.1a2.92,2.92,0,0,1,4.57,0c1.81,2.13,10.32,13.23,13.71,17,1.18,1.32,2.63,3.12,1.41,5a3,3,0,0,1-2.53,1.19h-4.71v53.39ZM51,.67A8.65,8.65,0,0,1,54.34,0a8.84,8.84,0,0,1,3.34.66,8.65,8.65,0,0,1,2.83,1.88A8.53,8.53,0,0,1,62.4,5.36a8.74,8.74,0,0,1,.68,3.33A8.84,8.84,0,0,1,62.42,12,8.72,8.72,0,0,1,45.64,8.74a8.75,8.75,0,0,1,2.55-6.18A8.68,8.68,0,0,1,51,.67Z"/></svg>
+                    </div>
+                </div>
+                <!-- ------------------------- -->
+                <form>
+                    <div class="row">
+                        <div>
+                            <input type="text" placeholder="الاسم الكامل *" required data-tr-placeholder="contact_full_name" id="NameForm">
+                        </div>
+                        <!-------->
+                        <div>
+                            <input type="email" placeholder="البريد الاكتروني *" required data-tr-placeholder="contact_email" id="EmailForm">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <select name="type_service" id="type_service" data-tr-label="service_type">
+                                <option value="" data-tr="service_type_placeholder">نوع الخدمة</option>
+                                <option value="موقع كامل" data-tr="service_type_full_website">موقع كامل</option>
+                                <option value="صفحة هبوط" data-tr="service_type_landing_page">صفحة هبوط</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="service" id="service" data-tr-label="service_required">
+                                <option value="" data-tr="service_required_placeholder">الخدمة المطلوبة</option>
+                                <option value="موقع شركة" data-tr="service_required_company">موقع شركة</option>
+                                <option value="صفحة هبوط لمنتج" data-tr="service_required_product_landing">صفحة هبوط لمنتج</option>
+                                <option value="موقع لعلامة تجارية" data-tr="service_required_brand">موقع لعلامتك التجارية</option>
+                                <option value="أخرى" data-tr="service_required_other">أخرى</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <select name="package" id="package" data-tr-label="package_type">
+                            <option value="" data-tr="package_type_placeholder">نوع الباقة</option>
+                            <option value="الباقة الأساسية" data-tr="package_basic">الباقة الأساسية</option>
+                            <option value="الباقة الاحترافية" data-tr="package_professional">الباقة الاحترافية</option>
+                            <option value="الباقة المتكاملة" data-tr="package_premium">الباقة المتكاملة</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <textarea name="description" rows="5" id="description" placeholder="تفاصيل المشروع *" required data-tr-placeholder="contact_project_details"></textarea>
+                    </div>
+                    <button class="submit-btn" data-tr="contact_submit_button" id="btnSubmit" onclick="submiteData(event)">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الطلب
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div> 
+    <!-- -------------------------------------------------------------------------- 
+                            Start FAQ Section
+         ----------------------------------------------------------------------------> 
+    <div class="faq">
+        <div class="my-container">
+            <div class="titlle">
+                <span data-tr="faq_section_title">الأسئلة الشائعة</span>
+                <h1 data-tr="faq_section_heading">اجابات على أسئلتكم</h1>
+                <p data-tr="faq_section_subtitle">أجيب عن أكثر الأسئلة شيوعاً لمساعدتك في اتخاذ القرار</p>
+            </div>
+            <div class="faq_grid">
+                <div class="item" onclick="FAQ(this)">
+                    <div class="question">
+                        <span data-tr="faq_q1">كم يستغرق بناء موقع كامل؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="answer" data-tr="faq_a1">يعتمد على حجم المشروع، المواقع البسيطة تستغرق أسبوعين، والمتاجر الإلكترونية 3-4 أسابيع.</div>
+                </div>
+                <div class="item" onclick="FAQ(this)">
+                    <div class="question">
+                        <span data-tr="faq_q2">هل توفر خدمة استضافة ودومين؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="answer" data-tr="faq_a2">لا, لكن اذا كنت مبتدأ و لا تعرف كيف تطلق موقعك فأنا أساعدك في اطلاقه</div>
+                </div>
+                <div class="item" onclick="FAQ(this)">
+                    <div class="question">
+                        <span data-tr="faq_q3">ماذا بعد تسليم الموقع؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="answer" data-tr="faq_a3">تقوم بشراء استضافة و تطلق عليها موقعك</div>
+                </div>
+                <div class="item" onclick="FAQ(this)">
+                    <div class="question">
+                        <span data-tr="faq_q4">هل يمكن تعديل موقع قائم؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="answer" data-tr="faq_a4">بالتأكيد، أقدم خدمات تطوير وتحسين للمواقع القائمة.</div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- -------------------------------------------------------------------------- 
+                            Start Footer Section
+         ---------------------------------------------------------------------------->      
+    <footer>
+        <div class="my-container">
+            <div class="content">
+                <div class="about">
+                    <h1 class="logo" data-tr="footer_logo">WEB 7</h1>
+                    <p data-tr="footer_about_text">مطور ويب محترف في المجال بخبرة سابقة، أساعد الشركات والأفراد في بناء حضور رقمي قوي يحقق أهدافهم.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mohamed-ibrahim-60b97a381/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61580205818219" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mohamed_web7/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/213776819127" target="_blank"><i class="fab fa-whatsapp"  target="_blank"></i></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <h4 data-tr="footer_quick_links_title">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#HeroSection" data-tr="footer_link_home">الرئيسية</a></li>
+                        <li><a href="#ServicesSection" data-tr="footer_link_services">الخدمات</a></li>
+                        <li><a href="#PortfolioSection" data-tr="footer_link_portfolio">أعمالي</a></li>
+                        <li><a href="#ContactSection" data-tr="footer_link_contact">اتصل بي</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h4 data-tr="footer_services_title">الخدمات</h4>
+                    <ul>
+                        <li><a href="#ServicesSection" data-tr="footer_service_company">مواقع شركات</a></li>
+                        <li><a href="#ServicesSection" data-tr="footer_service_landing_pages">صفحات هبوط</a></li>
+                        <li><a href="#ServicesSection" data-tr="footer_service_brand">مواقع للعلامات التجارية</a></li>
+                        <li><a href="#ServicesSection" data-tr="footer_service_product_landing">صفحات هبوط للمنتجات</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+            <p>© 2026 WEB 7 - <span data-tr="footer_copyright">جميع الحقوق محفوظة</span></p>
+        </div>
+        </div>
+    </footer>   
+<script src="translate.js"></script>           
+<script src="script.js"></script>    
+</body>
+</html>
