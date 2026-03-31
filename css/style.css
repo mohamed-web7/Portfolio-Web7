@@ -356,6 +356,11 @@ header .my-container .left_nav .language button:hover:not(.active){
         font-size: 24px;
     }
 }
+@media(max-width:570px){
+    header .my-container .right_nav .logo span{
+        font-size: 14px;
+    }
+}
 /* -------------------------------------------------------------------------------------------------
                                         Start Hero section
 ------------------------------------------------------------------------------------------------------*/
@@ -521,7 +526,12 @@ header .my-container .left_nav .language button:hover:not(.active){
         display: block;
     }
 }
-
+@media(max-width:570px){
+    .hero_content{
+        height: fit-content;
+        padding-bottom: 40px;
+    }
+}
 @keyframes float {
     0%, 100% {
          transform: translateY(-50%); 
@@ -574,7 +584,6 @@ header .my-container .left_nav .language button:hover:not(.active){
     align-items: center;
     gap: 15px;
 }
-.trust .badges .item .text
 .trust .badges .item .text h4{
     font-size: 16px;
     font-weight: 700;
@@ -583,6 +592,24 @@ header .my-container .left_nav .language button:hover:not(.active){
 .trust .badges .item .text p{
     color: var(--text-muted);
     font-size: 13px;
+}
+@media(max-width:570px){
+    .trust .badges .item .iconee svg{
+        width: 28px;
+        height: 28px;
+    }
+    .trust .badges .item .text h4{
+        font-size: 13px;
+    }
+    .trust .badges .item .text p{
+        font-size: 11px;
+    }
+    .trust .badges{
+        gap: 22px;
+    }
+    .trust{
+        padding: 22px 0;
+    }
 }
 /* -------------------------------------------------------------------------------------------------
                                         Start Services section
@@ -629,6 +656,7 @@ header .my-container .left_nav .language button:hover:not(.active){
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .services .my-container .services_grid .card{
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -682,6 +710,11 @@ header .my-container .left_nav .language button:hover:not(.active){
 .services .my-container .services_grid .card ul li i{
     color: var(--gold);
     font-size: 12px;
+}
+@media(max-width:570px){
+    .services .my-container .services_grid{
+        justify-content: center;
+    }
 }
 /* -------------------------------------------------------------------------------------------------
                                         Start Portfolio section
@@ -864,7 +897,14 @@ header .my-container .left_nav .language button:hover:not(.active){
 .portfolio .my-container .project_01 .carde .viewer img{
     width: 100%;
 }
-
+@media(max-width:570px){
+    .portfolio .my-container .cardes{
+        justify-content: center;
+    }
+    .portfolio .my-container .project_01{
+        padding-bottom: 0;
+    }
+}
 /* -------------------------------------------------------------------------------------------------
                                         Start Why Us section
 ------------------------------------------------------------------------------------------------------*/
@@ -1037,6 +1077,21 @@ header .my-container .left_nav .language button:hover:not(.active){
 .why .my-container .testimonials .card .profile .info p{
     color: var(--text-muted);
     font-size: 13px;
+}
+@media(max-width:570px){
+    .why .my-container .boxes .box .icone{
+        width: 56px;
+        height: 56px;
+    }
+    .why .my-container .boxes .box .icone i{
+        font-size: 28px;
+    }
+    .why .my-container .boxes .box h4{
+        font-size: 17px;
+    }
+    .why .my-container .boxes{
+        gap: 25;
+    }
 }
 
 /* -------------------------------------------------------------------------------------------------
@@ -1248,6 +1303,11 @@ header .my-container .left_nav .language button:hover:not(.active){
 .pricing .my-container .pricing_grid .card.mainn button:hover{
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(136, 5, 8, 0.4);
+}
+@media(max-width:570px){
+    .pricing .my-container .pricing_grid{
+        justify-content: center;
+    }
 }
 /* -------------------------------------------------------------------------------------------------
                                         Start Contact section
