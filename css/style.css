@@ -1092,6 +1092,9 @@ header .my-container .left_nav .language button:hover:not(.active){
     .why .my-container .boxes{
         gap: 25;
     }
+    .why .my-container .testimonials .track{
+        gap: 20px;
+    }
 }
 
 /* -------------------------------------------------------------------------------------------------
@@ -1148,7 +1151,8 @@ header .my-container .left_nav .language button:hover:not(.active){
     padding: 90px 0px;
     position: relative;
 }
-.pricing .my-container > h1{
+.pricing .my-container > h1,
+.pricing .my-container .titprice{
     font-size: 20px;
     font-weight: 800;
     margin-bottom: 20px;
@@ -1179,7 +1183,7 @@ header .my-container .left_nav .language button:hover:not(.active){
 }
 .pricing .my-container .pricing_grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
     /* display: flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -1308,6 +1312,72 @@ header .my-container .left_nav .language button:hover:not(.active){
     .pricing .my-container .pricing_grid{
         justify-content: center;
     }
+}
+.pricing .my-container .show_more_packages{
+    width: 91%;
+    position: relative;
+    height: 2px;
+    background: var(--border-color);
+    transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+    -moz-transform: translateX(-5%);
+    -ms-transform: translateX(-5%);
+    -o-transform: translateX(-5%);
+    display: flex;
+    align-items: center;
+}
+.pricing .my-container .show_more_packages .icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--gold-light);
+    background: var(--bg-card);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+.pricing .my-container .show_more_packages .icon i{
+    font-size: 26px;
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+}
+.pricing .my-container .pack_web{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+    -webkit-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+}
+
+.pricing .my-container .pack_web.activee{
+    max-height: fit-content;
+}
+@media(max-width:570px){
+    .pricing .my-container .show_more_packages .icon{
+        width: 35px;
+        height: 35px;
+    }
+    .pricing .my-container .show_more_packages .icon i{
+        font-size: 20px;
+    }
+    
 }
 /* -------------------------------------------------------------------------------------------------
                                         Start Contact section
@@ -1499,9 +1569,14 @@ header .my-container .left_nav .language button:hover:not(.active){
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s, margin-top 0.3s;
+    -webkit-transition: max-height 0.3s, margin-top 0.3s;
+    -moz-transition: max-height 0.3s, margin-top 0.3s;
+    -ms-transition: max-height 0.3s, margin-top 0.3s;
+    -o-transition: max-height 0.3s, margin-top 0.3s;
     color: var(--text-secondary);
     font-size: 14px;
     line-height: 1.7;
+    
 }
 .faq .my-container .faq_grid .item.active .answer{
     max-height: 200px;
@@ -1623,7 +1698,16 @@ footer .my-container .footer-bottom {
 
 
 
-
+@media(max-width:570px){
+    .services,
+    .portfolio,
+    .why,
+    .process,.pricing,
+    .contact,
+    .faq{
+        padding: 40px 0;
+    }
+}
 
 
 

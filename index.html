@@ -514,7 +514,7 @@
                 <div class="card">
                     <div class="info">
                         <h3 data-tr="pricing_basic_landing_title">الباقة الأساسية</h3>
-                        <div class="price">80 $</div>
+                        
                     </div>
                     <ul class="featurs">
                         <li><i class="fas fa-check"></i><span data-tr="pricing_basic_landing_feature_1">صفحة واحدة</span></li>
@@ -529,7 +529,7 @@
                     <div class="popular" data-tr="pricing_most_popular_badge">الأكثر طلبا</div>
                     <div class="info">
                         <h3 data-tr="pricing_professional_landing_title">الباقة الاحترافية</h3>
-                        <div class="price">160 $</div>
+                        
                     </div>
                     <ul class="featurs">
                         <li><i class="fas fa-check"></i><span data-tr="pricing_professional_landing_feature_1">صفحة واحدة</span></li>
@@ -545,7 +545,7 @@
                 <div class="card">
                     <div class="info">
                         <h3 data-tr="pricing_premium_landing_title">الباقة المتكاملة</h3>
-                        <div class="price">280 $</div>
+                        
                     </div>
                     <ul class="featurs">
                         <li><i class="fas fa-check"></i><span data-tr="pricing_premium_landing_feature_1">3 صفحات</span></li>
@@ -559,13 +559,20 @@
                     <button class="purchase" data-tr="pricing_order_button" onclick="selectPackage('صفحة هبوط','الباقة المتكاملة')">أطلب الان</button>
                 </div>
             </div>
-            <br><br><br>
-            <h1 class="type" data-tr="pricing_full_websites_type">أسعار مواقع كاملة</h1>
+            <br><br>
+            <div class="show_more_packages" onclick="showPack()">
+                <div class="icon">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <br><br>
+            <div class="pack_web" id="packWebFull">
+                <h1 class="type titprice" data-tr="pricing_full_websites_type">أسعار مواقع كاملة</h1>
             <div class="pricing_grid">
                 <div class="card">
                     <div class="info">
                         <h3 data-tr="pricing_basic_full_title">الباقة الأساسية</h3>
-                        <div class="price">400 $</div>
+                        
                     </div>
                     <ul class="featurs">
                         <li><i class="fas fa-check"></i><span data-tr="pricing_basic_full_feature_1">5 صفحات رئيسية</span></li>
@@ -580,7 +587,7 @@
                     <div class="popular" data-tr="pricing_most_popular_badge">الأكثر طلبا</div>
                     <div class="info">
                         <h3 data-tr="pricing_professional_full_title">الباقة الاحترافية</h3>
-                        <div class="price">750 $</div>
+                        
                     </div>
                     <ul class="featurs">
                         <li><i class="fas fa-check"></i><span data-tr="pricing_professional_full_feature_1">8–10 صفحات كاملة</span></li>
@@ -596,7 +603,7 @@
                 <div class="card">
                     <div class="info">
                         <h3 data-tr="pricing_premium_full_title">الباقة المتكاملة</h3>
-                        <div class="price">1200 $</div>
+                        
                     </div>
                     <ul class="featurs">
                         <li><i class="fas fa-check"></i><span data-tr="pricing_premium_full_feature_1">12–15 صفحة أو أكثر حسب الطلب</span></li>
@@ -609,6 +616,7 @@
                     </ul>
                     <button class="purchase" data-tr="pricing_order_button" onclick="selectPackage('موقع كامل','الباقة المتكاملة')">أطلب الان</button>
                 </div>
+            </div>
             </div>
         </div>
     </div>        

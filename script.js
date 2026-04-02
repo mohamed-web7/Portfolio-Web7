@@ -172,3 +172,14 @@ function activeLinkes(){
 };
 activeLinkes()
 
+
+let packWebFull = document.getElementById("packWebFull");
+function showPack(){
+    let iconeSP = document.querySelector(".pricing .my-container .show_more_packages .icon i")
+    packWebFull.classList.toggle("activee")
+    if(packWebFull.classList.contains("activee")){
+        iconeSP.style.transform = "rotate(-180deg)";
+    }else{
+        iconeSP.style.transform = "rotate(0deg)";
+    }
+}

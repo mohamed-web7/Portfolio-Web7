@@ -22,7 +22,8 @@ header .my-container .logoContain{
 
 
 
-.pricing .my-container > h1{
+.pricing .my-container > h1,
+.pricing .my-container .titprice{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -32,4 +33,24 @@ header .my-container .logoContain{
     -o-transform: translateX(-50%);
     margin-bottom: 50px;
     cursor: pointer;
+}
+
+.pricing .my-container .show_more_packages{
+    width: 91%;
+    position: relative;
+    height: 2px;
+    background: var(--border-color);
+    transform: translateX(5%);
+    -webkit-transform: translateX(5%);
+    -moz-transform: translateX(5%);
+    -ms-transform: translateX(5%);
+    -o-transform: translateX(5%);
+}
+.pricing .my-container .show_more_packages .icon{
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
