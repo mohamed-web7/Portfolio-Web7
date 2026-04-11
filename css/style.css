@@ -1387,6 +1387,8 @@ header .my-container .left_nav .language button:hover:not(.active){
 
 .pricing .my-container .pack_web.activee{
     max-height: fit-content;
+    padding-bottom: 50px;
+    margin-top: -40px;
 }
 @media(max-width:570px){
     .pricing .my-container .show_more_packages .icon{
