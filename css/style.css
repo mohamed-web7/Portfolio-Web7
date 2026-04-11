@@ -958,6 +958,25 @@ header .my-container .left_nav .language button:hover:not(.active){
     gap: 40px;
     width: 100%;
     overflow: hidden;
+    position: relative;
+}
+.why .my-container .testimonials::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 55px;
+    height: 100%;
+    background-image: linear-gradient(to right ,var(--bg-secondary),transparent );
+    z-index: 9999;
+}
+.why .my-container .testimonials::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 55px;
+    height: 100%;
+    background-image: linear-gradient(to left ,var(--bg-secondary),transparent );
+    z-index: 9999;
 }
 
 .why .my-container .testimonials .track{
