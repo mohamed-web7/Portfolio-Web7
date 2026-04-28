@@ -188,6 +188,12 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
 header{
     position: fixed;
     top: 0;
@@ -199,6 +205,26 @@ header{
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
 }
+header .my-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+header .my-container .right_nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+header .my-container .right_nav .logo a.logoContain{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .my-container .right_nav .logo a.logoContain img{
+    width: 40px;
+}
 header .my-container .right_nav .logo span{
     font-size: 32px;
     font-weight: 800;
@@ -206,6 +232,11 @@ header .my-container .right_nav .logo span{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
+}
+header .my-container .right_nav nav{
+    display: flex;
+    align-items: center;
+    gap: 35px;
 }
 header .my-container .right_nav nav a{
     font-family: 'Cairo';
@@ -236,7 +267,11 @@ header .my-container .right_nav nav a.active::after {
 header .my-container .right_nav nav a:hover {
     color: var(--gold);
 }
-
+header .my-container .left_nav{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 header .my-container .left_nav .icon{
     cursor: pointer;
     color: var(--text-primary);

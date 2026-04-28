@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="icon" type="image/png" href="images/webp/icon.webp">
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/enStyle.css" id="ENStyle" disabled>
@@ -18,15 +18,15 @@
                             Start Header
          ---------------------------------------------------------------------------->
     <header>
-        <div class="my-container flex items-center justify-between py-5">
-            <div class="right_nav flex items-center gap-[40px]">
+        <div class="my-container">
+            <div class="right_nav">
                 <div class="logo ">
-                    <a href="index.html" class="flex items-center gap-[10px] logoContain">
+                    <a href="index.html" class="logoContain">
                         <span data-tr="web7_logo_text">WEB 7</span>
-                        <img src="images/logo.png" alt="logo" class="w-[40px]">
+                        <img src="images/webp/logo.webp" alt="logo">
                     </a>
                 </div>
-                <nav class="flex items-center gap-[35px]" id="navHeaderPhone">
+                <nav id="navHeaderPhone">
                     <a href="#HeroSection" class="active" data-tr="nav_home" onclick="changeBorder(this)">الرئيسية</a>
                     <a href="#ServicesSection" data-tr="nav_services" onclick="changeBorder(this)">الخدمات</a>
                     <a href="#PortfolioSection" data-tr="nav_portfolio" onclick="changeBorder(this)">أعمالي</a>
@@ -35,7 +35,7 @@
                     <a href="#ContactSection" data-tr="nav_contact" onclick="changeBorder(this)">اتصل بي</a>
                 </nav>
             </div>
-            <div class="left_nav flex items-center gap-[25px]">
+            <div class="left_nav">
                 <div class="language">
                     <button class="active btnLang" data-tr="lang_arabic" onclick="translatePage('ar',this)">عربي</button>
                     <button data-tr="lang_english" onclick="translatePage('en',this)" class="btnLang">EN</button>
@@ -78,7 +78,7 @@
             </div>
             <!-- -----------------------------  02  -------------------------------- -->
             <div class="image">
-                <img src="images/hero_man.png" alt="man">
+                <img src="images/webp/hero_man.webp" alt="man">
             </div>
         </div>
     </div>     
@@ -259,7 +259,7 @@
             </div>
             <div class="cardes">
                 <div class="card" onclick="openProject('realEstate')">
-                    <img src="images/realEstate.jpg" alt="Real Estate Website">
+                    <img src="images//webp/realEstate.webp" alt="Real Estate Website">
                     <div class="overlay">
                         <h3 data-tr="portfolio_real_estate_title">موقع لشركة عقارية</h3>
                         <div class="tools">
@@ -270,7 +270,7 @@
                     </div>
                 </div>
                 <div class="card " onclick="openProject('dentist')">
-                    <img src="images/dentist.jpg" alt="Real Estate Website">
+                    <img src="images/webp/dentist.webp" alt="Real Estate Website">
                     <div class="overlay">
                         <h3 data-tr="portfolio_dentist_title">صفحة هبوط لعيادة أسنان</h3>
                         <div class="tools">
@@ -281,7 +281,7 @@
                     </div>
                 </div>
                 <div class="card" onclick="openProject('hotel')">
-                    <img src="images/hotel.jpg" alt="Real Estate Website">
+                    <img src="images/webp/hotel.webp" alt="Real Estate Website">
                     <div class="overlay">
                         <h3 data-tr="portfolio_hotel_title">موقع لفندق</h3>
                         <div class="tools">
@@ -296,7 +296,7 @@
                 <div class="carde">
                     <div class="headd">
                         <div class="logo">
-                            <img src="images/logo.png" alt="logo">
+                            <img src="images/webp/logo.webp" alt="logo">
                             <h1>WEB 7</h1>
                         </div>
                         <div class="icone" onclick="closing('realEstate')">
@@ -306,7 +306,7 @@
                     <div class="viewer">
                         <h1 data-tr="trestt">بيع عقارك بسرعة وباحترافية مع موقع يظهره بأفضل صورة</h1>
                         <p data-tr="trrestp">موقع مصمم خصيصًا لأصحاب العقارات لعرض العقارات بشكل جذاب، توضيح الأسعار والمواصفات بدقة، لجذب العملاء وزيادة فرص البيع.</p>
-                        <img src="images/Real Estate Projet.jpg" alt="Website">
+                        <img src="images/webp/Real Estate Projet.webp" alt="Website">
                     </div>
                 </div>
             </div>
@@ -314,7 +314,7 @@
                 <div class="carde">
                     <div class="headd">
                         <div class="logo">
-                            <img src="images/logo.png" alt="logo">
+                            <img src="images/webp/logo.webp" alt="logo">
                             <h1>WEB 7</h1>
                         </div>
                         <div class="icone" onclick="closing('dentist')">
@@ -324,7 +324,7 @@
                     <div class="viewer">
                         <h1 data-tr="trdtt">اجذب المزيد من مرضى الأسنان مع صفحة حجز سهلة واحترافية</h1>
                         <p data-tr="trdd">صفحة هبوط مصممة خصيصًا لعيادتك، تعرض خدماتك بشكل احترافي وتتيح للمرضى حجز مواعيدهم بسهولة، مما يزيد الطلبات ويجعل إدارتك أسهل.</p>
-                        <img src="images/dentistProject.jpg" alt="Website">
+                        <img src="images/webp/dentistProject.webp" alt="Website">
                     </div>
                 </div>
             </div>
@@ -332,7 +332,7 @@
                 <div class="carde">
                     <div class="headd">
                         <div class="logo">
-                            <img src="images/logo.png" alt="logo">
+                            <img src="images/webp/logo.webp" alt="logo">
                             <h1>WEB 7</h1>
                         </div>
                         <div class="icone" onclick="closing('hotel')">
@@ -342,7 +342,7 @@
                     <div class="viewer">
                         <h1 data-tr="trhtt">زد حجوزات فندقك مع موقع سريع واحترافي يجذب الضيوف</h1>
                         <p data-tr="trhtd">موقع مصمم للفنادق يرفع حجوزاتك، سريع، متجاوب مع كل الأجهزة، ويعرض خدماتك بشكل احترافي مع نظام حجز يسهل على الضيوف الحجز فورًا.</p>
-                        <img src="images/HotelProject.jpg" alt="Website">
+                        <img src="images/webp/HotelProject.webp" alt="Website">
                     </div>
                 </div>
             </div>
@@ -388,7 +388,7 @@
                     <p data-tr="testimonial_1_text">عملت مع عدة مطورين لكن WEB 7 كان الأفضل بكل معنى الكلمة. فهم احتياجاتي بدقة ونفذ المشروع باحترافية عالية، والتزم بالمواعيد وكان متواصلاً معي طول فترة العمل.</p>
                     <div class="profile">
                         <div class="image">
-                            <img src="images/user.png" alt="client">
+                            <img src="images/webp/user.webp" alt="client">
                         </div>
                         <div class="info">
                             <h5 data-tr="testimonial_1_name">أحمد علي</h5>
@@ -400,7 +400,7 @@
                     <p data-tr="testimonial_2_text">بصراحة ما كنت متوقع يفرق معي الموقع لهدرجة، كنت حاطه بس ليكون عندي حضور على الإنترنت وخلاص. لكن بعد ما اشتغل عليه محمد، بديت نلاحظ الناس تدخل أكثر وتسأل وحتى يجو للمطعم. فرق كبير مقارنة بكيف كان قبل، حسيت فعلاً أنه خدمتي وصلت للناس.</p>
                     <div class="profile">
                         <div class="image">
-                            <img src="images/user.png" alt="client">
+                            <img src="images/webp/user.webp" alt="client">
                         </div>
                         <div class="info">
                             <h5 data-tr="testimonial_2_name">عبد الرحمان</h5>
@@ -412,7 +412,7 @@
                     <p data-tr="testimonial_3_text">بصراحة ما كنت متوقع صفحة بسيطة تفرق معي بهذا الشكل، كنت نحسبها حاجة ثانوية فقط. لكن بعد ما اشتغلت مع WEB 7، بديت نلاحظ عدد أكبر من الناس يتواصلوا معي ويحجزوا، وحتى الاستفسارات زادت بشكل واضح. فرق كبير مقارنة بكيف كان الوضع قبل.</p>
                     <div class="profile">
                         <div class="image">
-                            <img src="images/user.png" alt="client">
+                            <img src="images/webp/user.webp" alt="client">
                         </div>
                         <div class="info">
                             <h5 data-tr="testimonial_3_name">خالد</h5>
@@ -426,7 +426,7 @@
                     <p data-tr="testimonial_4_text">عملت مع عدة مطورين لكن WEB 7 كان الأفضل بكل معنى الكلمة. فهم احتياجاتي بدقة ونفذ المشروع باحترافية عالية، والتزم بالمواعيد وكان متواصلاً معي طول فترة العمل.</p>
                     <div class="profile">
                         <div class="image">
-                            <img src="images/user.png" alt="client">
+                            <img src="images/webp/user.webp" alt="client">
                         </div>
                         <div class="info">
                             <h5 data-tr="testimonial_4_name">أحمد علي</h5>
@@ -438,7 +438,7 @@
                     <p data-tr="testimonial_5_text">بصراحة ما كنت متوقع يفرق معي الموقع لهدرجة، كنت حاطه بس ليكون عندي حضور على الإنترنت وخلاص. لكن بعد ما اشتغل عليه محمد، بديت نلاحظ الناس تدخل أكثر وتسأل وحتى يجو للمطعم. فرق كبير مقارنة بكيف كان قبل، حسيت فعلاً أنه خدمتي وصلت للناس.</p>
                     <div class="profile">
                         <div class="image">
-                            <img src="images/user.png" alt="client">
+                            <img src="images/webp/user.webp" alt="client">
                         </div>
                         <div class="info">
                             <h5 data-tr="testimonial_5_name">عبد الرحمان</h5>
@@ -450,7 +450,7 @@
                     <p data-tr="testimonial_6_text">بصراحة ما كنت متوقع صفحة بسيطة تفرق معي بهذا الشكل، كنت نحسبها حاجة ثانوية فقط. لكن بعد ما اشتغلت مع WEB 7، بديت نلاحظ عدد أكبر من الناس يتواصلوا معي ويحجزوا، وحتى الاستفسارات زادت بشكل واضح. فرق كبير مقارنة بكيف كان الوضع قبل.</p>
                     <div class="profile">
                         <div class="image">
-                            <img src="images/user.png" alt="client">
+                            <img src="images/webp/user.webp" alt="client">
                         </div>
                         <div class="info">
                             <h5 data-tr="testimonial_6_name">خالد</h5>
